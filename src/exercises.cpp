@@ -6,6 +6,24 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
+  using namespace std;
+
+int main() {
+    string linea;
+    getline(cin, linea); // Leer la línea desde la terminal
+
+    int longitud_palabra = 0;
+    int suma_longitudes = 0;
+
+    for (char caracter : linea) {
+        if (caracter != ' ') {
+            longitud_palabra++;
+        } else {
+            suma_longitudes += longitud_palabra; // Sumar la longitud de la palabra a la suma total
+            longitud_palabra = 0; // Reiniciar la longitud de la palabra para la siguiente palabra
+        }
+    }
+
 }
 
 void exercise_2(string s1) {
