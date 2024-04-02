@@ -6,6 +6,18 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
+    int longitud_palabra = 0;
+    int suma_longitudes = 0;
+
+    for (char caracter : linea) {
+        if (caracter != ' ') {
+            longitud_palabra++;
+        } else {
+            suma_longitudes += longitud_palabra;
+            longitud_palabra = 0;
+        }
+    }
+
 }
 
 void exercise_2(string s1) {
