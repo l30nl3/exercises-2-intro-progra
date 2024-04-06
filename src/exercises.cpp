@@ -6,12 +6,6 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-int main() {
-    string linea;
-    getline(cin, linea);
-
-    int longitud_palabra = 0;
-
     for (char caracter : linea) {
         if (caracter != ' ') {
             longitud_palabra++;
