@@ -53,21 +53,7 @@ void exercise_3(string s1) {
 
 
 void exercise_4(int n) {
-    int indice = -1; // Iniciar el índice en -1 para tener en cuenta el primer carácter
 
-    for (char caracter : s1) {
-        // Incrementar el índice solo si el carácter no es un espacio
-        if (caracter != ' ') {
-            indice++;
-        } else {
-            // Si encontramos un espacio, imprimir el índice y reiniciar para la próxima palabra
-            cout << indice << endl;
-            indice = -1; // Reiniciar el índice para la próxima palabra
-        }
-    }
-
-    // Imprimir el índice para la última palabra
-    cout << indice << endl;
 }
 
 
