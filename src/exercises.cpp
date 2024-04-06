@@ -34,19 +34,24 @@ void exercise_1(string s1) {
     }
 }
 
-
 void exercise_3(string s1) {
+
     string word = "";
 
+
     for (int i = 0; i < s1.size(); ++i) {
+
         if (s1[i] != ' ') {
             word += s1[i];
         } else {
+
             cout << "[" << word << "]" << endl;
+
             word = "";
         }
     }
-    
+
+
     cout << "[" << word << "]" << endl;
 }
 
