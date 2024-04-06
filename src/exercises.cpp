@@ -112,8 +112,6 @@ void imprimirCalendario(int primer_dia, int num_dias) {
     }
 }
 
-}
-
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
   return 0;
