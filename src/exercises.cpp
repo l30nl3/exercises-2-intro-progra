@@ -92,8 +92,6 @@ void exercise_3(string s1) {
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-  unsigned long long factorial(int n) {
-
     if (n < 0) {
         std::cout << "El numero es negativo. Intentelo de nuevo" << std::endl;
         return 0;
@@ -111,7 +109,6 @@ void exercise_4(int n) {
         result *= i;
     }
     return result;
-}
 }
 
 
