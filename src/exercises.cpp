@@ -90,26 +90,27 @@ void exercise_3(string s1) {
     }
 }
 
-void imprimirCalendario(int primer_dia, int num_dias) {
-    // Imprimir los espacios iniciales para el primer día
-    for (int i = 1; i < primer_dia; ++i) {
-        std::cout << "   ";
+void exercise_4(int n) {
+  // TODO: YOUR CODE HERE
+      if (n < 0) {
+        cout << "El numero es negativo. Intentelo de nuevo" << endl;
+        return;
     }
 
-    // Iterar sobre cada día del mes
-    for (int dia = 1; dia <= num_dias; ++dia) {
-        // Imprimir el día con dos caracteres
-        std::cout.width(2);
-        std::cout << dia;
-
-        // Si estamos en el último día de la semana o el último día del mes, saltamos de línea
-        if ((dia + primer_dia - 1) % 7 == 0 || dia == num_dias) {
-            std::cout << std::endl;
-        } else {
-            // Imprimir espacios entre los días
-            std::cout << ' ';
-        }
+    
+    if (n > 14) {
+        cout << "El numero es muy grande. Intentelo de nuevo" << endl;
+        return;
     }
+
+    // Calculamos el factorial
+    int factorial = 1;
+    for (int i = 2; i <= n; ++i) {
+        factorial *= i;
+    }
+
+    
+    cout << factorial << endl;
 }
 
 int exercise_6(int n) {
