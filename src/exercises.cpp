@@ -103,7 +103,7 @@ void exercise_4(int n) {
         return;
     }
 
-    // Calculamos el factorial
+
     int factorial = 1;
     for (int i = 2; i <= n; ++i) {
         factorial *= i;
@@ -112,29 +112,28 @@ void exercise_4(int n) {
     
     cout << factorial << endl;
 }
-
+//5
   void imprimirCalendario(int primer_dia, int num_dias) {
-    // Imprimir los espacios iniciales para el primer día
+
     for (int i = 1; i < primer_dia; ++i) {
         std::cout << "   ";
     }
 
-    // Iterar sobre cada día del mes
+
     for (int dia = 1; dia <= num_dias; ++dia) {
-        // Imprimir el día con dos caracteres
+
         std::cout.width(2);
         std::cout << dia;
 
-        // Si estamos en el último día de la semana o el último día del mes, saltamos de línea
+
         if ((dia + primer_dia - 1) % 7 == 0 || dia == num_dias) {
             std::cout << std::endl;
         } else {
-            // Imprimir espacios entre los días
+
             std::cout << ' ';
         }
     }
 }
-
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
