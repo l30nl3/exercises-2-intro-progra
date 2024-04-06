@@ -113,9 +113,27 @@ void exercise_4(int n) {
     cout << factorial << endl;
 }
 
-
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
+  void calcularFactorial(int n) {
+    if (n < 0) {
+        cout << "El numero es negativo. Intentelo de nuevo" << endl;
+        return;
+    }
+
+    if (n > 14) {
+        cout << "El numero es muy grande. Intentelo de nuevo" << endl;
+        return;
+    }
+
+    // Calculamos el factorial
+    int factorial = 1;
+    for (int i = 2; i <= n; ++i) {
+        factorial *= i;
+    }
+
+    cout << factorial << endl;
+}
 }
 
 int exercise_6(int n) {
