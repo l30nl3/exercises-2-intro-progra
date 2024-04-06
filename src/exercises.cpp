@@ -113,9 +113,6 @@ void exercise_4(int n) {
     cout << factorial << endl;
 }
 
-void exercise_5(int n, int k) {
-  // TODO: YOUR CODE HERE
-  
   void imprimirCalendario(int primer_dia, int num_dias) {
     // Imprimir los espacios iniciales para el primer día
     for (int i = 1; i < primer_dia; ++i) {
@@ -138,7 +135,6 @@ void exercise_5(int n, int k) {
     }
 }
 
-}
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
