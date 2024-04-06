@@ -56,7 +56,7 @@ void exercise_3(string s1) {
         cout << "[" << palabra << "]" << endl;
     }
 }
-}
+
 void exercise_4(int n) {
 
 }
