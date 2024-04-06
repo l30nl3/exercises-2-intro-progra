@@ -115,6 +115,23 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
+    for (int i = 1; i < n; ++i) {
+        printf("    ");
+    }
+
+
+    for (int dia = 1; dia <= k; ++dia) {
+
+        printf("%2d", dia);
+
+
+        if ((dia + n - 1) % 7 == 0 || dia == k) {
+            printf("\n");
+        } else {
+
+            printf("  ");
+        }
+    }
 }
 
 int exercise_6(int n) {
