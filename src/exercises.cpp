@@ -119,12 +119,6 @@ void exercise_5(int n, int k) {
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
-  #include <stdio.h>
-
-void sumarDigitos(int numero) {
-    int suma = 0;
-
-    // Iterar sobre cada dígito del número
     while (numero > 0) {
         suma += numero % 10; // Agregar el último dígito al resultado
         numero /= 10; // Eliminar el último dígito del número
@@ -135,7 +129,6 @@ void sumarDigitos(int numero) {
 }
 
   return 0;
-}
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
