@@ -112,24 +112,14 @@ void exercise_4(int n) {
     
     cout << factorial << endl;
 }
-//5
+
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
 }
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
-    while (numero > 0) {
-        suma += numero % 10; // Agregar el último dígito al resultado
-        numero /= 10; // Eliminar el último dígito del número
-    }
-
-    // Imprimir la suma
-    printf("%d\n", suma);
 }
-
-  return 0;
-
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
 }
