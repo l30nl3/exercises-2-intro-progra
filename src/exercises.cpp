@@ -16,14 +16,6 @@ void dividirTexto(const string& linea) {
             cout << longitud_palabra << " ";
             longitud_palabra = 0; // Reiniciar la longitud de la palabra para la siguiente palabra
         }
-    }
-
-    // Imprimir la longitud de la última palabra si la línea no termina con un espacio
-    if (linea.back() != ' ') {
-        cout << longitud_palabra;
-    }
-
-    cout << endl; // Salto de línea al final
 }
 
 }
