@@ -35,25 +35,22 @@ void exercise_1(string s1) {
 }
 
 void exercise_3(string s1) {
+    int indice = 0;
 
-    string word = "";
-
-
-    for (int i = 0; i < s1.size(); ++i) {
-
-        if (s1[i] != ' ') {
-            word += s1[i];
+    for (char caracter : s1) {
+        // Si el carácter es un espacio, imprimir el índice y reiniciar para la próxima palabra
+        if (caracter == ' ') {
+            cout << indice << endl;
+            indice = 0; // Reiniciar el índice para la próxima palabra
         } else {
-
-            cout << "[" << word << "]" << endl;
-
-            word = "";
+            indice++; // Incrementar el índice para cada carácter de la palabra
         }
     }
 
-
-    cout << "[" << word << "]" << endl;
+    // Imprimir el índice para la última palabra
+    cout << indice << endl;
 }
+
 
 
 void exercise_4(int n) {
