@@ -112,7 +112,6 @@ void exercise_4(int n) {
     
     cout << factorial << endl;
 }
-}
 
 
 void exercise_5(int n, int k) {
