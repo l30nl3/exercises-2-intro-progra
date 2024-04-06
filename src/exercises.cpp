@@ -6,14 +6,30 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
+#include <iostream>
+#include <string>
+
+void dividirTexto(const std::string& linea) {
+    int longitud_palabra = 0;
+
     for (char caracter : linea) {
         if (caracter != ' ') {
             longitud_palabra++;
         } else {
-            cout << longitud_palabra << " ";
-            longitud_palabra = 0;
+            std::cout << longitud_palabra << " ";
+            longitud_palabra = 0; // Reiniciar la longitud de la palabra para la siguiente palabra
         }
     }
+
+    std::cout << longitud_palabra << std::endl; // Imprimir la longitud de la última palabra
+}
+
+int main() {
+    std::string linea;
+    std::getline(std::cin, linea); // Leer la línea desde la terminal
+    dividirTexto(linea);
+
+    return 0;
 }
 
 void exercise_2(string s1) {
