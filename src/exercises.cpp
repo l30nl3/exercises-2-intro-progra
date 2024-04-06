@@ -136,7 +136,16 @@ void exercise_5(int n, int k) {
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
+       int sum = 0;
+    
+    while (n > 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    
+    return sum;
 }
+
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
 }
