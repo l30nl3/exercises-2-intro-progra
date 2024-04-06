@@ -35,7 +35,8 @@ void exercise_1(string s1) {
 }
 
 void exercise_3(string s1) {
-  int cakeCount = 0;
+  // TODO: YOUR CODE HERE
+    int cakeCount = 0;
 
     string numberStr = "";
     bool foundSpace = false; // Variable para rastrear si hemos encontrado un espacio en blanco
@@ -69,23 +70,6 @@ void exercise_3(string s1) {
             }
             numberStr += c;
         }
-    }
-
-    // Procesamos el último número en numberStr si es que hay alguno
-    if (!numberStr.empty()) {
-        int cake = 0;
-        // Convertimos la cadena en un número entero
-        for (char digit : numberStr) {
-            cake = cake * 10 + (digit - '0');
-        }
-        if (cake == 1) {
-            cout << "Om-nom-nom :P" << endl;
-        } else {
-            cout << "No cake :(" << endl;
-        }
-    } else if (foundSpace) {
-        // Si encontramos un espacio en blanco al final, imprimimos "No cake :("
-        cout << "No cake :(" << endl;
     }
 }
 
