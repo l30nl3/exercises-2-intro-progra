@@ -92,29 +92,6 @@ void exercise_3(string s1) {
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-      if (n < 0) {
-        cout << "El numero es negativo. Intentelo de nuevo" << endl;
-        return;
-    }
-
-    
-    if (n > 14) {
-        cout << "El numero es muy grande. Intentelo de nuevo" << endl;
-        return;
-    }
-
-    // Calculamos el factorial
-    int factorial = 1;
-    for (int i = 2; i <= n; ++i) {
-        factorial *= i;
-    }
-
-    
-    cout << factorial << endl;
-}
-
-void exercise_5(int n, int k) {
-  // TODO: YOUR CODE HERE
     if (n < 0) {
         cout << "El numero es negativo. Intentelo de nuevo" << endl;
         return;
@@ -126,9 +103,13 @@ void exercise_5(int n, int k) {
     }
 
     // Calculamos el factorial
-    long long factorial = 1; // Usamos long long para manejar números grandes
+    long long factorial = 1;
     for (int i = 2; i <= n; ++i) {
         factorial *= i;
+        if (factorial < 0) { // Verificar si hay desbordamiento
+            cout << "El factorial es demasiado grande para ser representado en un 'long long'." << endl;
+            return;
+        }
     }
 
     cout << factorial << endl;
