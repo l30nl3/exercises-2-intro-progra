@@ -114,7 +114,7 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-  // TODO: YOUR CODE HERE
+    // Imprimir los espacios iniciales para el primer día
     for (int i = 1; i < n; ++i) {
         printf("   ");
     }
@@ -128,7 +128,7 @@ void exercise_5(int n, int k) {
         if ((dia + n - 1) % 7 == 0 || dia == k) {
             printf("\n");
         } else {
-            // Imprimir espacios entre los días
+            // Imprimir dos espacios entre los días
             printf("  ");
         }
     }
