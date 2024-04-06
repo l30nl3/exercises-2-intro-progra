@@ -36,24 +36,57 @@ void exercise_1(string s1) {
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-    string palabra = "";
+   int cakeCount = 0;
 
-    for (char caracter : s1) {
-        // Si el carácter no es un espacio, agregarlo a la palabra actual
-        if (caracter != ' ') {
-            palabra += caracter;
-        } else {
-            // Si encontramos un espacio, imprimir la palabra entre corchetes y reiniciar
-            if (!palabra.empty()) {
-                cout << "[" << palabra << "]" << endl;
-                palabra = "";
+    string numberStr = "";
+    bool foundSpace = false; // Variable para rastrear si hemos encontrado un espacio en blanco
+
+    for (char c : s1) {
+        if (c == ' ') {
+            foundSpace = true; // Marcamos que hemos encontrado un espacio en blanco
+            if (!numberStr.empty()) {
+                int cake = 0;
+                // Convertimos la cadena en un número entero
+                for (char digit : numberStr) {
+                    cake = cake * 10 + (digit - '0');
+                }
+                if (cake == 1) {
+                    cout << "Om-nom-nom :P" << endl;
+                    cakeCount++;
+
+                    if (cakeCount >= 10) {
+                        return; // Salimos del ciclo si se han realizado más de 10 visitas
+                    }
+                } else {
+                    cout << "No cake :(" << endl;
+                    return; // Salimos del ciclo si no hay más pastel
+                }
             }
+            numberStr = ""; // Reiniciamos numberStr para la próxima iteración
+        } else {
+            if (foundSpace) {
+                // Si encontramos un espacio en blanco previamente, reiniciamos foundSpace
+                foundSpace = false;
+            }
+            numberStr += c;
         }
     }
 
-    // Imprimir la última palabra si no estaba vacía
-    if (!palabra.empty()) {
-        cout << "[" << palabra << "]" << endl;
+    // Procesamos el último número en numberStr si es que hay alguno
+    if (!numberStr.empty()) {
+        int cake = 0;
+        // Convertimos la cadena en un número entero
+        for (char digit : numberStr) {
+            cake = cake * 10 + (digit - '0');
+        }
+        if (cake == 1) {
+            cout << "Om-nom-nom :P" << endl;
+        } else {
+            cout << "No cake :(" << endl;
+        }
+    } else if (foundSpace) {
+        // Si encontramos un espacio en blanco al final, imprimimos "No cake :("
+        cout << "No cake :(" << endl;
     }
 }
 
