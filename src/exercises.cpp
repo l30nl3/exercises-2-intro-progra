@@ -102,11 +102,10 @@ void exercise_4(int n) {
         return;
     }
 
-    // Calculamos el factorial
     long long factorial = 1;
     for (int i = 2; i <= n; ++i) {
         factorial *= i;
-        if (factorial < 0) { // Verificar si hay desbordamiento
+        if (factorial < 0) { 
             cout << "El factorial es demasiado grande para ser representado en un 'long long'." << endl;
             return;
         }
