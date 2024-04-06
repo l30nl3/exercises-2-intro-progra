@@ -88,7 +88,6 @@ void exercise_3(string s1) {
         cout << "No cake :(" << endl;
     }
 }
-}
 
 
 void exercise_4(int n) {
