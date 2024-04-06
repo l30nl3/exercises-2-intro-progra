@@ -37,6 +37,27 @@ void exercise_1(string s1) {
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
+    string word = "";
+
+    // Iterar a lo largo de la cadena
+    for (int i = 0; i < s1.size(); ++i) {
+        // Si el carácter no es un espacio, agregarlo a la palabra
+        if (s1[i] != ' ') {
+            word += s1[i];
+        } else {
+            // Si encontramos un espacio, imprimir la palabra entre corchetes
+            if (word != "") {
+                cout << "[" << word << "]" << endl;
+                // Reiniciar la palabra para la próxima
+                word = "";
+            }
+        }
+    }
+
+    // Imprimir la última palabra si no se ha impreso
+    if (word != "") {
+        cout << "[" << word << "]" << endl;
+    }
 }
 
 void exercise_4(int n) {
