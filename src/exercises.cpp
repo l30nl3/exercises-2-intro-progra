@@ -6,16 +6,14 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-void dividirTexto(const string& linea) {
-    int longitud_palabra = 0;
-
-    for (char caracter : linea) {
-        if (caracter != ' ') {
-            longitud_palabra++;
-        } else {
-            cout << longitud_palabra << " ";
-            longitud_palabra = 0; // Reiniciar la longitud de la palabra para la siguiente palabra
+void exercise_1(string s1) {
+    // TODO: Write your code here
+    for(int i = 0; i < s1.size(); i++){
+        if (s1[i] == ' '){
+            cout << i << endl;
         }
+    }
+    cout << s1.size() << endl;
 }
 
 }
