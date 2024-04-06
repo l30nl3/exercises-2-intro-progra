@@ -91,7 +91,27 @@ void exercise_3(string s1) {
 }
 
 void exercise_4(int n) {
+  // TODO: YOUR CODE HERE
+  unsigned long long factorial(int n) {
 
+    if (n < 0) {
+        std::cout << "El numero es negativo. Intentelo de nuevo" << std::endl;
+        return 0;
+    }
+
+
+    if (n > 14) {
+        std::cout << "El numero es muy grande. Intentelo de nuevo" << std::endl;
+        return 0;
+    }
+
+
+    unsigned long long result = 1;
+    for (int i = 2; i <= n; ++i) {
+        result *= i;
+    }
+    return result;
+}
 }
 
 
