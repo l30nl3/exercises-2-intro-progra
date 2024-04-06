@@ -114,21 +114,21 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-    // Imprimir los espacios iniciales para el primer día
+
     for (int i = 1; i < n; ++i) {
         printf("   ");
     }
 
-    // Iterar sobre cada día del mes
+
     for (int dia = 1; dia <= k; ++dia) {
-        // Imprimir el día con dos caracteres
+
         printf("%2d", dia);
 
-        // Si estamos en el último día de la semana o el último día del mes, saltamos de línea
+
         if ((dia + n - 1) % 7 == 0 || dia == k) {
             printf("\n");
         } else {
-            // Imprimir dos espacios entre los días
+
             printf("  ");
         }
     }
