@@ -14,10 +14,6 @@ void exercise_1(string s1) {
             longitud_palabra = 0;
         }
     }
-
-    cout << longitud_palabra << endl;
-
-    return 0;
 }
 
 void exercise_2(string s1) {
