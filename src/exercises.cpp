@@ -6,8 +6,6 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-void exercise_1(string s1) {
-    // TODO: Write your code here
     for(int i = 0; i < s1.size(); i++){
         if (s1[i] == ' '){
             cout << i << endl;
