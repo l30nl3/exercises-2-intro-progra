@@ -112,26 +112,10 @@ void exercise_4(int n) {
     
     cout << factorial << endl;
 }
-//5
-void imprimirCalendario(int primer_dia, int num_dias) {
-    // Imprimir los espacios iniciales para el primer día
-    for (int i = 1; i < primer_dia; ++i) {
-        printf("    ");
-    }
 
-    // Iterar sobre cada día del mes
-    for (int dia = 1; dia <= num_dias; ++dia) {
-        // Imprimir el día con dos caracteres
-        printf("%2d", dia);
-
-        // Si estamos en el último día de la semana o el último día del mes, saltamos de línea
-        if ((dia + primer_dia - 1) % 7 == 0 || dia == num_dias) {
-            printf("\n");
-        } else {
-            // Imprimir espacios entre los días
-            printf("  ");
-        }
-    }
+void exercise_5(int n, int k) {
+   //TODO: YOUR CODE HERE
+   
 }
 
 int exercise_6(int n) {
