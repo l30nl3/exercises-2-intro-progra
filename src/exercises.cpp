@@ -115,7 +115,7 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //TODO: YOUR CODE HERE
-   
+
 }
 
 int exercise_6(int n) {
@@ -132,7 +132,15 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
+     double sum = 0.0;
+    double term = 1.0;
+    for (int i = 1; i <= n; ++i) {
+        sum += term;
+        term /= i;
+    }
+    cout << sum << endl;
 }
+)
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
