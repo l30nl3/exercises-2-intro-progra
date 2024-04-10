@@ -122,11 +122,11 @@ void exercise_5(int n, int k) {
     }
 
     for (int i = 1; i <= k; i++) {
-        std::cout << std::setw(2) << day << " ";
+        printf("%2d ", day);
         day++;
 
         if ((i + n - 1) % 7 == 0 || i == k) {
-            std::cout << std::endl;
+            printf("\n");
         }
     }
 }
