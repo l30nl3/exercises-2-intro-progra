@@ -115,6 +115,20 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //TODO: YOUR CODE HERE
+    int day = 1;
+
+    for (int i = 1; i < n; i++) {
+        std::cout << "   ";
+    }
+
+    for (int i = 1; i <= k; i++) {
+        std::cout << std::setw(2) << day << " ";
+        day++;
+
+        if ((i + n - 1) % 7 == 0 || i == k) {
+            std::cout << std::endl;
+        }
+    }
 }
 
 int exercise_6(int n) {
