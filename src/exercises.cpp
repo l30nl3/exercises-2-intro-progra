@@ -115,20 +115,7 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //TODO: YOUR CODE HERE
-    for (int i = 1; i < n; i++) {
-        printf("   ");
-    }
 
-    for (int i = 1; i <= k; i++) {
-        printf("%2d", day);
-        day++;
-
-        if ((i + n - 1) % 7 == 0 || i == k) {
-            printf("\n");
-        } else {
-            printf(" ");
-        }
-    }
 }
 
 int exercise_6(int n) {
