@@ -142,7 +142,6 @@ void exercise_7(int n) {
     printf("%.6f\n", sum);
 }
 
-
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
 }
