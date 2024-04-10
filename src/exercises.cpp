@@ -131,8 +131,15 @@ int exercise_6(int n) {
 }
 
 void exercise_7(int n) {
-  // TODO: YOUR CODE HERE
+    double sum = 0.0;
+    int sign = 1;
 
+    for (int i = 1; i <= n; i++) {
+        sum += sign * (1.0 / i);
+        sign *= -1;
+    }
+
+    printf("%.6f\n", sum);
 }
 
 void exercise_8(string s) {
