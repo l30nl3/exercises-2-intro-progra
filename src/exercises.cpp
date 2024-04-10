@@ -115,20 +115,6 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //TODO: YOUR CODE HERE
-    for (int i = 1; i < n; i++) {
-        std::cout << "   ";
-    }
-
-    // Imprimir los números del calendario
-    for (int i = 1; i <= k; i++) {
-        std::cout << std::setw(2) << day << " ";
-        day++;
-
-        // Si llegamos al final de la semana, saltamos a una nueva línea
-        if ((i + n - 1) % 7 == 0 || i == k) {
-            std::cout << std::endl;
-        }
-    }
 }
 
 int exercise_6(int n) {
