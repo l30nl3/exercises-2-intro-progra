@@ -115,8 +115,6 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //TODO: YOUR CODE HERE
-    int day = 1;
-
     for (int i = 1; i < n; i++) {
         std::cout << "   ";
     }
