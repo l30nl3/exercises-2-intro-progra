@@ -115,7 +115,35 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
    //TODO: YOUR CODE HERE
+    int i, j, day = 1;
 
+    // Imprimir los espacios en blanco para alinear el primer día
+    for (i = 1; i < n; i++) {
+        printf("   ");
+    }
+
+    // Imprimir los números del calendario
+    for (i = 1; i <= k; i++) {
+        printf("%2d ", day);
+        day++;
+
+        // Si llegamos al final de la semana, saltamos a una nueva línea
+        if ((i + n - 1) % 7 == 0 || i == k) {
+            printf("\n");
+        }
+    }
+}
+
+int main() {
+    int n, k;
+    printf("Ingrese el número del día de la semana del primer día del mes (1-7): ");
+    scanf("%d", &n);
+    printf("Ingrese el número de días en este mes (1-99): ");
+    scanf("%d", &k);
+
+    exercise_5(n, k);
+
+    return 0;
 }
 
 int exercise_6(int n) {
