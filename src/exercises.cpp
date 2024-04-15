@@ -247,7 +247,19 @@ void exercise_15(int decimal) {
 
 void exercise_16(int dividendo, int divisor) {
   // TODO: YOUR CODE HERE
+    if (divisor == 0) {
+        cout << "Error: División por cero" << endl;
+        return;
+    }
 
+    int cociente = 0;
+    int residuo = dividendo;
+
+    while (residuo >= divisor) {
+        residuo -= divisor;
+        cociente++;
+    }
+    cout << cociente << " " << residuo << endl;
 }
 
 void exercise_17(int n) {
