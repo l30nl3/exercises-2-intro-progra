@@ -242,21 +242,7 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
-    if (decimal == 0) {
-        cout << "0" << endl;
-        return;
-    }
 
-    string binary = "";
-    
-    while (decimal > 0) {
-        int remainder = decimal % 2;
-        char digit = remainder + '0';
-        binary = digit + binary;
-        decimal /= 2;
-    }
-
-    cout << binary << endl;
 }
 
 void exercise_16(int dividendo, int divisor) {
