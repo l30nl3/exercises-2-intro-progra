@@ -112,8 +112,21 @@ void exercise_4(int n) {
     cout << factorial << endl;
 }
 
-void exercise_5(int n, int k) {
-   //HERE YOUR CODE
+//5
+void imprimir_calendario(int n, int k) {
+    int dia_semana = n;
+    for (int dia = 1; dia <= k; dia++) {
+        if (dia_semana > 1 && dia == 1) {
+            std::cout << std::string((dia_semana - 1) * 3, ' ');
+        }
+        std::cout << std::setw(2) << dia;
+        dia_semana++;
+        if (dia_semana > 7) {
+            std::cout << std::endl;
+            dia_semana = 1;
+        }
+    }
+    std::cout << std::endl;
 }
 
 int exercise_6(int n) {
