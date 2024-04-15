@@ -205,7 +205,7 @@ int exercise_10(int a, int b) {
         b = a % b;
         a = temp;
     }
-    return a
+    return a;
 }
 
 void exercise_11() {
