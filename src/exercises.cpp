@@ -132,16 +132,14 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
     double sum = 0.0;
-    int sign = 1;
-
-    for (int i = 1; i <= n; i++) {
-        sum += sign * (1.0 / i);
-        sign *= -1;
+    double term = 1.0;
+    for (int i = 1; i <= n; ++i) {
+        sum += term;
+        term /= i;
     }
-
-    printf("%.6f\n", sum);
+    cout << sum << endl;
 }
-
+}
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
 }
