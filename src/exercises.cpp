@@ -172,8 +172,29 @@ void exercise_8(string s) {
 
 void exercise_9(string s) {
   // TODO: YOUR CODE HERE
+    int primera_aparicion = -1;
+    int segunda_aparicion = -1;
 
+    for (int i = 0; i < s.size(); ++i) {
+        if (s[i] == 'f') {
+            if (primera_aparicion == -1) {
+                primera_aparicion = i;
+            } else if (segunda_aparicion == -1) {
+                segunda_aparicion = i;
+                break; // Terminamos la búsqueda una vez que encontramos la segunda aparición
+            }
+        }
+    }
+
+    if (primera_aparicion == -1) {
+        cout << -2 << endl;
+    } else if (segunda_aparicion == -1) {
+        cout << -1 << endl;
+    } else {
+        cout << segunda_aparicion << endl;
+    }
 }
+
 
 
 
