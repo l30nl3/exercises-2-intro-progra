@@ -215,9 +215,9 @@ void exercise_11() {
     
     for (int n = 0; n < 10; ++n) {
         Un /= n + 1; // Calculamos Un+1 usando la fórmula
-        cout << "U" << n+1 << " = " << Un << endl
+        cout << "U" << n+1 << " = " << Un << endl;
     }
-} 
+
 
 
 
