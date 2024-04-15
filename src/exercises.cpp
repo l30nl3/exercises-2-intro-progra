@@ -242,38 +242,6 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
-     int original = n;
-    int reversed = 0;
-    while (n > 0) {
-        int remainder = n % 10;
-        reversed = reversed * 10 + remainder;
-        n /= 10;
-    }
-    if (original == reversed) {
-        return "Es palindrome";
-    } else {
-        return "No es palindrome";
-    }
-}
-
-void exercise_15(int decimal) {
-  // TODO: YOUR CODE HERE
-   int original = n;
-    int reversed = 0;
-    while (n > 0) {
-        int remainder = n % 10;
-        reversed = reversed * 10 + remainder;
-        n /= 10;
-    }
-    if (original == reversed) {
-        return "Es palindrome";
-    } else {
-        return "No es palindrome";
-    }
-}
-
-void exercise_15(int decimal) {
-  // TODO: YOUR CODE HERE
     if (decimal == 0) {
         cout << "0" << endl;
         return;
