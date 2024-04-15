@@ -33,7 +33,6 @@ void exercise_2(string s1) {
     }
 }
 
-
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
     int cakeCount = 0;
@@ -90,7 +89,6 @@ void exercise_3(string s1) {
     }
 }
 
-
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
       if (n < 0) {
@@ -118,7 +116,6 @@ void exercise_5(int n, int k) {
    //HERE YOUR CODE
 }
 
-
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
      int sum = 0;
@@ -141,8 +138,6 @@ void exercise_7(int n) {
     }
     cout << sum << endl;
 }
-
-
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
@@ -195,9 +190,6 @@ void exercise_9(string s) {
     }
 }
 
-
-
-
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
       while (b != 0) {
@@ -219,18 +211,9 @@ void exercise_11() {
     }
 }
 
-
-
-
-
 void exercise_12() {
   // TODO: YOUR CODE HERE
 }
-
-
-
-
-
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
@@ -242,18 +225,10 @@ void exercise_15(int decimal) {
 
 }
 
-
-
-
-
 void exercise_16(int dividendo, int divisor) {
   // TODO: YOUR CODE HERE
 
 }
-
-
-
-
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
