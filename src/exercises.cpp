@@ -1,4 +1,3 @@
-
 #include <cmath>
 #include <iostream>
 
@@ -14,7 +13,7 @@ void exercise_1(string s1) {
     cout << s1.size() << endl;
 }
 
-  void exercise_2(string s1) {
+void exercise_2(string s1) {
   // TODO: YOUR CODE HERe
   string word = "";
 
@@ -34,9 +33,10 @@ void exercise_1(string s1) {
     }
 }
 
+
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-   int cakeCount = 0;
+    int cakeCount = 0;
 
     string numberStr = "";
     bool foundSpace = false; 
@@ -46,7 +46,7 @@ void exercise_3(string s1) {
             foundSpace = true; 
             if (!numberStr.empty()) {
                 int cake = 0;
-               
+                // 
                 for (char digit : numberStr) {
                     cake = cake * 10 + (digit - '0');
                 }
@@ -65,7 +65,7 @@ void exercise_3(string s1) {
             numberStr = ""; 
         } else {
             if (foundSpace) {
-               
+                
                 foundSpace = false;
             }
             numberStr += c;
@@ -85,10 +85,11 @@ void exercise_3(string s1) {
             cout << "No cake :(" << endl;
         }
     } else if (foundSpace) {
-
+        
         cout << "No cake :(" << endl;
     }
 }
+
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
@@ -103,7 +104,7 @@ void exercise_4(int n) {
         return;
     }
 
-
+    // Calculamos el factorial
     int factorial = 1;
     for (int i = 2; i <= n; ++i) {
         factorial *= i;
@@ -114,13 +115,13 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-   //TODO: YOUR CODE HERE
-
+   //HERE YOUR CODE
 }
+
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
-       int sum = 0;
+     int sum = 0;
     
     while (n > 0) {
         sum += n % 10;
@@ -129,6 +130,7 @@ int exercise_6(int n) {
     
     return sum;
 }
+
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
@@ -141,49 +143,67 @@ void exercise_7(int n) {
     cout << sum << endl;
 }
 
+
+
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
+
 }
+
 
 void exercise_9(string s) {
   // TODO: YOUR CODE HERE
+
 }
+
+
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-  return 0;
+
 }
 
 void exercise_11() {
   // TODO: YOUR CODE HERE
-}
+
+} 
+
+
+
+
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
 }
 
+
+
+
+
+
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
-  return 0;
-}
 
-string exercise_14(int n) {
-  // TODO: YOUR CODE HERE
-  return "";
 }
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
+
 }
 
-void exercise_16(int divident, int divider) {
+
+
+
+
+void exercise_16(int dividendo, int divisor) {
   // TODO: YOUR CODE HERE
+
 }
+
+
+
+
 
 void exercise_17(int n) {
-  // TODO: YOUR CODE HERE
-}
-
-void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
 }
