@@ -137,9 +137,9 @@ void exercise_7(int n) {
         sum += term;
         term /= i;
     }
-    cout << sum << endl;
+    cout << sum << endl
 }
-}
+
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
 }
