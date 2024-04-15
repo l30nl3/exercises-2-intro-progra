@@ -260,7 +260,7 @@ void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
     if (decimal == 0) {
         cout << "0" << endl;
-        return;
+        return
     }
 
     string binary = "";
@@ -272,7 +272,7 @@ void exercise_15(int decimal) {
         decimal /= 2;
     }
 
-    cout << binary << endl
+    cout << binary << endl;
 }
 
 void exercise_16(int dividendo, int divisor) {
