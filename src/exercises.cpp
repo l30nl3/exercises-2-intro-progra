@@ -131,11 +131,18 @@ int exercise_6(int n) {
     return sum;
 }
 
-
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
-
+    double sum = 0.0;
+    double term = 1.0;
+    for (int i = 1; i <= n; ++i) {
+        sum += term;
+        term /= i;
+    }
+    cout << sum << endl;
 }
+
+
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
@@ -144,6 +151,22 @@ void exercise_8(string s) {
         if (c != ' ') {
             clean_string += c;
         }
+    }
+    
+    // Verificar si la cadena resultante es un palíndromo
+    bool is_palindrome = true;
+    int n = clean_string.size();
+    for (int i = 0; i < n / 2; ++i) {
+        if (clean_string[i] != clean_string[n - i - 1]) {
+            is_palindrome = false;
+            break;
+        }
+    }
+    
+    if (is_palindrome) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
     }
 }
 
