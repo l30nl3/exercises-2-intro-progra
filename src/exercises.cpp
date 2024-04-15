@@ -147,7 +147,11 @@ void exercise_7(int n) {
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
-
+      string clean_string = "";
+    for (char c : s) {
+        if (c != ' ') {
+            clean_string += c;
+        }
 }
 
 
