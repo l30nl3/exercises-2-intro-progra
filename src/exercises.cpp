@@ -260,7 +260,7 @@ void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
     if (decimal == 0) {
         cout << "0" << endl;
-        return
+        return;
     }
 
     string binary = "";
